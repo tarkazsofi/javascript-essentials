@@ -3,8 +3,7 @@ const dayOfWeek = now.getDay();
 const isItWeekend = () => {
   if (dayOfWeek === 0 || dayOfWeek === 6) {
     return `Yup`;
-  }
-  if (dayOfWeek <= 1 && dayOfWeek >= 5) {
+  } else {
     return "Nope";
   }
 };
