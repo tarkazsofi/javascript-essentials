@@ -3,9 +3,9 @@ const currentTimestamp = now.getTime();
 const getAgeInDays = (person) => {
   const then = new Date(person.birthday);
   const birthdayTimestamp = then.getTime();
-  const milliSecondsInADay = 1000 * 60 * 60 * 24;
+  const millisecondsInADay = 1000 * 60 * 60 * 24;
   const days = Math.floor(
-    (currentTimestamp - birthdayTimestamp) / milliSecondsInADay
+    (currentTimestamp - birthdayTimestamp) / millisecondsInADay
   );
   return `${person.name} is ${days} days old.`;
 };
