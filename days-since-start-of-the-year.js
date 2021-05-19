@@ -1,11 +1,13 @@
 const now = new Date();
+const month = now.getMonth();
+const day = now.getDate();
+const year = now.getFullYear();
 const currentTimestamp = now.getTime();
 const daysSinceTheStartOfTheYear = () => {
-  const then = new Date("2021-01-01");
-  const landingTimestamp = then.getTime();
+  const firstDayOfYear = new Date(`${year}-01-01`).getTime();
   const millisecondsInADay = 1000 * 60 * 60 * 24;
   const days = Math.floor(
-    (currentTimestamp - landingTimestamp) / millisecondsInADay
+    (currentTimestamp - firstDayOfYear) / millisecondsInADay
   );
   return days;
 };
