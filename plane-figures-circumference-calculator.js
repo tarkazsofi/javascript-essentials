@@ -1,12 +1,12 @@
 const circumference = (planeFigures) => {
   if (planeFigures.shape === "circle") {
-    return `${2 * planeFigures.radius * Math.PI}`;
+    return 2 * planeFigures.radius * Math.PI;
   }
   if (planeFigures.shape === "square") {
-    return `${planeFigures.side * 4}`;
+    return planeFigures.side * 4;
   }
   if (planeFigures.shape === "rectangle") {
-    return `${2 * planeFigures.horizontalSide + 2 * planeFigures.verticalSide}`;
+    return 2 * planeFigures.horizontalSide + 2 * planeFigures.verticalSide;
   }
 };
 

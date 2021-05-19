@@ -7,6 +7,6 @@ const daysSinceTheStartOfTheYear = () => {
   const days = Math.floor(
     (currentTimestamp - landingTimestamp) / millisecondsInADay
   );
-  return `${days}`;
+  return days;
 };
 console.log(daysSinceTheStartOfTheYear()); // E.g. on 20 February it should output 51

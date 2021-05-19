@@ -7,6 +7,6 @@ const daysSinceCuriosityLanded = () => {
   const days = Math.floor(
     (currentTimestamp - landingTimestamp) / millisecondsInADay
   );
-  return `${days}`;
+  return days;
 };
 console.log(daysSinceCuriosityLanded()); // Should output e.g. 3172

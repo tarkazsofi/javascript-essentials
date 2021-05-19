@@ -1,12 +1,12 @@
 const area = (planeFigures) => {
   if (planeFigures.shape === "circle") {
-    return `${planeFigures.radius ** 2 * Math.PI}`;
+    return planeFigures.radius ** 2 * Math.PI;
   }
   if (planeFigures.shape === "square") {
-    return `${planeFigures.side ** 2}`;
+    return planeFigures.side ** 2;
   }
   if (planeFigures.shape === "rectangle") {
-    return `${planeFigures.horizontalSide * planeFigures.verticalSide}`;
+    return planeFigures.horizontalSide * planeFigures.verticalSide;
   }
 };
 
